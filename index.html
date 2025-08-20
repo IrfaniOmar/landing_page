@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK SERUSUP Digital Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">🌟 SK SERUSUP DIGITAL HUB 🌟</div>
+        <div class="subtitle">Fun Learning for Everyone!</div>
+        <div class="nav-buttons">
+            <!---<button class="nav-btn" onclick="showAbout()">About</button>-->
+            <button class="nav-btn" onclick="switchLanguage('english')">English</button>
+            <button class="nav-btn" onclick="switchLanguage('malay')">Bahasa Melayu</button>
+        </div>
+    </div>
+
+
+
+    <div class="section">
+        <div class="section-title games-title">🎮 GAMES 🎮</div>
+        <div class="apps-grid">
+            <div class="app-card" onclick="openApp('https://www.funbrain.com')">
+                <div class="app-icon funbrain">
+                    <img src="img/funbrain.png" alt="Funbrain Logo">
+                </div>
+                <div class="app-title">FUNBRAIN</div>
+                <div class="app-desc" id="funbrain-desc">Fun games for learning!</div>
+            </div>
+
+
+            <div class="app-card" onclick="openApp('https://www.abcya.com')">
+                <div class="app-icon abcya">
+                    <img src="img/abcya.png" alt="ABCYA! Logo">
+                </div>
+                <div class="app-title">ABCYA!</div>
+                <div class="app-desc" id="abcya-desc">Cool games for kids!</div>
+            </div>
+
+            <div class="app-card" onclick="openApp('https://www.starfall.com')">
+                <div class="app-icon starfall">
+                    <img src="img/starfall.png" alt="Starfall Logo">
+                </div>
+                <div class="app-title">STARFALL</div>
+                <div class="app-desc" id="starfall-desc">Reading & math games!</div>
+            </div>
+
+            <div class="app-card" onclick="openApp('https://kids.nationalgeographic.com')">
+                <div class="app-icon natgeo">
+                    <img src="img/national_geographic_kid.png" alt="Nat Geo Kids Logo">
+                </div>
+                <div class="app-title">NAT GEO KIDS</div>
+                <div class="app-desc" id="natgeo-desc">Animals & science fun!</div>
+            </div>
+
+            <div class="app-card" onclick="openApp('https://www.khanacademykids.org')">
+                <div class="app-icon khan">
+                    <img src="img/khan_academy_kids.png" alt="Khan Kids Logo">
+                </div>
+                <div class="app-title">KHAN KIDS</div>
+                <div class="app-desc" id="khan-desc">Learn math & reading!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title books-title">📚 E-BOOKS 📚</div>
+        <div class="apps-grid">
+            <div class="app-card" onclick="openApp('http://www.u-library.gov.my/portal/web/guest/onlinedatabases')">
+                <div class="app-icon upustaka">
+                    <img src="img/uPustaka_logo.png" alt="U-PUSTAKA Logo">
+                </div>
+                <div class="app-title">U-PUSTAKA</div>
+                <div class="app-desc" id="upustaka-desc">Free books online!</div>
+                <div class="tutorial-badge"
+                    onclick="event.stopPropagation(); openTutorial('https://library.sabah.gov.my/images/manual_pendaftaran_u-pustaka.pdf')">
+                    HOW TO USE</div>
+            </div>
+
+            <div class="app-card" onclick="openApp('https://sabah.elib.com.my')">
+                <div class="app-icon esentral">
+                    <img src="img/e-sentral.png" alt="E-Sentral Logo">
+                </div>
+                <div class="app-title">E-SENTRAL</div>
+                <div class="app-desc" id="esentral-desc">Borrow books on your phone!</div>
+                <div class="tutorial-badge"
+                    onclick="event.stopPropagation(); openTutorial('https://library.sabah.gov.my/images/Featured/access_esentral.pdf')">
+                    HOW TO USE</div>
+            </div>
+
+            <div class="app-card" onclick="openApp('https://sabah.overdrive.com')">
+                <div class="app-icon libby">
+                    <img src="img/libby.png" alt="Libby Logo">
+                </div>
+                <div class="app-title">LIBBY</div>
+                <div class="app-desc" id="libby-desc">Books you can listen to!</div>
+                <div class="tutorial-badge"
+                    onclick="event.stopPropagation(); openTutorial('https://library.sabah.gov.my/images/panduan_menggunakan_overdrive_libby_app.pdf')">
+                    HOW TO USE</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title learn-title">🎓 LEARNING TOOLS 🎓</div>
+        <div class="apps-grid">
+            <div class="app-card"
+                onclick="openApp('https://library.sabah.gov.my/index.php/en/services/resources/e-resources/introduction-to-i-learn-ace')">
+                <div class="app-icon ilearn">
+                    <img src="img/logo-ilearnace.png" alt="ILearn Logo">
+                </div>
+                <div class="app-title">I-LEARN ACE</div>
+                <div class="app-desc" id="ilearn-desc">Learn anywhere!</div>
+            </div>
+
+            <div class="app-card"
+                onclick="openApp('https://library.sabah.gov.my/index.php/en/services/resources/e-resources/gale-e-resources')">
+                <div class="app-icon gale">
+                    <img src="img/gale.png" alt="Gale Logo">
+                </div>
+                <div class="app-title">GALE</div>
+                <div class="app-desc" id="gale-desc">Old history books!</div>
+            </div>
+
+            <div class="app-card" onclick="openApp('https://www.worldcat.org')">
+                <div class="app-icon worldcat">
+                    <img src="img/worldcat.png" alt="WorldCat Logo">
+                </div>
+                <div class="app-title">WORLDCAT</div>
+                <div class="app-desc" id="worldcat-desc">Find books near you!</div>
+            </div>
+
+            <div class="app-card" onclick="openApp('https://delima.moe-dl.edu.my')">
+                <div class="app-icon delima">
+                    <img src="img/delima.png" alt="Delima Logo">
+                </div>
+                <div class="app-title">DELIMA KPM</div>
+                <div class="app-desc" id="delima-desc">Malaysia learning!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
