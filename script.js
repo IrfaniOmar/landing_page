@@ -29,7 +29,7 @@ function openTutorial(url) {
 }
 
 function showAbout() {
-    alert('🌟 This is SK SERUSUP Kids Hub! 🌟\n\nHere you can find:\n📚 Books to read\n🎮 Fun games\n🎓 Learning tools\n\nHave fun learning!');
+    alert('🌟 This is SK SERUSUP Digital Hub! 🌟\n\nHere you can find:\n📚 Books to read\n🎮 Fun games\n🎓 Learning tools\n\nHave fun learning!');
 }
 
 // Language translations (simple for kids)
